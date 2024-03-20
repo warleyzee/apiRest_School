@@ -1,10 +1,11 @@
 import { Router } from 'express';
-import homeController from '../controllers/HomeController';
+import userController from '../controllers/UserController';
 
 const router = new Router();
 
-router.get('/', homeController.index);
+router.post('/', userController.store);
 export default router;
+
 
 /*
 index -> List all users => GET
